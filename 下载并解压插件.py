@@ -1,8 +1,10 @@
-import requests
-import re
 import os
-import zipfile
+import re
 import sys
+import zipfile
+
+import requests
+
 
 def getnewversion(url:str)->str:#获取最新版本号
     data=str(requests.get(url).content)
